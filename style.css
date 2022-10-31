@@ -141,17 +141,20 @@ body {
 }
 
 .chair {
-
-    min-height: 600px;
-    background-image: url(./pages/chair.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
+    width: 308px;
+    height: 600px;
+    margin-left: 150px;
+    margin-top: 190px;
 }
 
 .container__chair {
     color: var(--color-white);
     height: 600px;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./pages/chair.jpg);
+    background-position: center;
 
 }
 
@@ -159,11 +162,12 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.17rem;
-    letter-spacing: 0em;    
+    letter-spacing: 0em;  
+    margin: 0;
+  
 }
 
 p {
-    width: 308px;
     font-weight: normal;
     font-size: 0.88rem;
     line-height: 1.43rem;
