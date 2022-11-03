@@ -7,6 +7,10 @@
   
     --container-width: 1110px;
     --gap: 20px;
+    --gap-xs: 10px;
+    --gap-sm: 15px;
+    --gap-lg: 30px;
+    --gap-xl: 40px;
   
     --font-family: "Roboto", sans-serif;
     --font-size: 16px;
@@ -23,7 +27,9 @@
 html {
     font-family: var(--font-family);
     font-size: var(--font-size);
-    font-weight: normal;
+}
+
+h1 {
 }
 a {
     text-decoration: none;
@@ -36,12 +42,32 @@ body {
     color: var(--color-gray)
 }
 
+.btn {
+    font-size: 0.875rem;
+    color: var(--color-black);
+    border-radius: 40px;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    height: 40px;
+    padding: 0.25em 1em;
+}
+ .btn-first {
+    background-color: var(--color-white);
+    border-color: var(--color-logo);
+ }
+
+ .btn-second {
+    background-color: var(--color-logo);
+    border-color: var(--color-white);
+    color: var(--color-white);
+ }
 .container {
     width: min(100% - var(--gap) * 2, var(--container-width));
     margin-inline: auto;
-}
-
-.header {
 }
 
 .navbar-secondary {
@@ -58,73 +84,55 @@ body {
     gap: 0 10px;
 
 }
-.navbar-secondary__item {
 
-
-}
 .navbar-secondary__link {
     display: block;
     padding: 7px 10px;
-
 }
+
 .navbar-info {
     background-color: var(--color-white);
     margin-bottom: 1px;
+    padding: var(--gap);
 }
 .navbar-info__container {
     display: flex;
     align-items: center;
-    width: min(100% - var(--gap) * 2, var(--container-width));
-
+    justify-content: space-between;
 }
-.logo {
-    min-height: 120px;
-    display: flex;
-    align-items: center;
-    width: min(100% - var(--gap) * 2, var(--container-width));
 
-}
 .logo__link {
     display: flex;
     align-items: center;
+    gap:var(--gap);
 }
-.logo__image {
-}
+
 .logo__title {
     color: var(--color-logo) ;
     font-size: 2.25rem;
-    font-weight: bold;
-    padding: 0 18px;
-    
+    font-weight: 700;
+    line-height: 1.16em;
+    letter-spacing: 0.1em;
 }
+
 .feedback {
     display: flex;
-    gap: 20px;
+    gap: var(--gap-xl);
     align-items: center;
-    justify-content: end;
 }
+
 .feedback__phone {
-    display: flex;
-    flex-wrap: nowrap;
-    min-width: 127px;
-
+    font-size: var(--font-size);
+    line-height: 1.187em;
 }
-.feedback__button {
-    border-color: var(--color-logo);
-    background-color: var(--color-white);
-    width: 170px;
-    height: 40px;
-    border-radius: 50px;
-    align-items: center;
 
-}
 .navbar-primary {
     min-height: 80px;
     display: flex;
     align-items: center;
     background-color: var(--color-white);
-
 }
+
 .navbar-primary__list {
     list-style: none;
     display: flex;
@@ -132,55 +140,46 @@ body {
     flex-wrap: wrap;
     gap: 0 20px;
 }
-.navbar-primary__item {
 
-}
 .navbar-primary__link {
     display: block;
     padding: 7px 10px;
+    color: var(--color-black);
+    font-size: var(--font-size);
 }
 
-.chair {
-    width: 308px;
-    height: 600px;
-    margin-left: 150px;
-    margin-top: 190px;
-}
-
-.container__chair {
-    color: var(--color-white);
-    height: 600px;
-    width: 100%;
-    position: absolute;
-    background-repeat: no-repeat;
+.hero {
     background-image: url(./pages/chair.jpg);
-    background-position: center;
-
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.17rem;
-    letter-spacing: 0em;  
-    margin: 0;
-  
-}
-
-p {
-    font-weight: normal;
-    font-size: 0.88rem;
-    line-height: 1.43rem;
-    padding-top: 50px;
-
-}
-.details {
-    margin-top: 50px;
-    border-color: var(--color-white);
     background-color: var(--color-logo);
+    background-repeat: no-repeat;
+    background-position: 50%;
     color: var(--color-white);
-    width: 170px;
-    height: 40px;
-    border-radius: 50px;
-    align-items: center;
+    padding: 190px 0;
+}
+
+.hero__content {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    max-width: 375px;
+}
+.hero__title {
+    line-height: 1.16em;
+    margin: 0;
+    font-size: 3.5em;
+
+}
+.hero__description {
+    line-height: 1.43em;
+    margin-bottom: 5px;
+}
+
+.hero__actions {
+    display: flex;
+}
+.hero__button {
+}
+.btn-second {
+}
+.btn {
 }
