@@ -54,6 +54,7 @@ body {
     min-width: 170px;
     height: 40px;
     padding: 0.25em 1em;
+    letter-spacing: 0.5;
 }
  .btn-first {
     background-color: var(--color-white);
@@ -285,8 +286,6 @@ line-height: 1.43em;
     height: 212px;
     background-color: var(--color-logo);
     display: flex;
-
-
 }
 .bonus-map__title {
     font-weight: 700;
