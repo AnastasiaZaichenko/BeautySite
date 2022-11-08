@@ -217,8 +217,7 @@ body {
     font-size: 1.5rem;
     line-height: 1.1em;
     color: var(--color-black);
-    margin: 0;
-    margin-bottom: var(--gap-xl);
+    margin-bottom: 35px;
 }
 
 .offers__content {
@@ -228,20 +227,20 @@ body {
 
 
 .offer-item {
-    background-color: var(--color-white);
-    padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--color-white);
+    padding: 25px;
     gap: var(--gap);
     flex: 1;
+    text-align: center;
 }
 
 .offer-item__title {
     font-size: 0.875rem;
     line-height: 1.43em;
     font-weight: 400;
-    text-align: center;
     color: var(--color-gray);
 }
 
@@ -273,7 +272,7 @@ body {
     background-repeat: no-repeat;
     background-position: calc(100% - 45px) 50%;
     flex: 1;
-    min-height: 212px;
+    padding: 35px 40px;
 }
 
 .subscribe__title {
@@ -287,9 +286,7 @@ body {
     flex-direction: column;
     gap: 25px;
     max-width: 265px;
-    min-height: 212px;
-    justify-content: center;
-    margin-left: 40px;
+ 
 }
 
 .subscribe__description {
@@ -313,12 +310,6 @@ body {
     color: #c4c4c4;
   }
 
-.our-shops__title {
-    font-weight: 700;
-    font-size: 1.13rem;
-    line-height: 1.17em;
-}
-
 .our-shops {
     background-color: var(--color-logo);
     color: var(--color-white);
@@ -326,21 +317,29 @@ body {
     background-repeat: no-repeat;
     background-position: calc(100% - 45px) 50%;
     flex: 1;
-    min-height: 212px;
+    padding: 35px 40px;
+
 }
 
 .our-shops__content {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    justify-content: center;
-    width: 170px;
-    margin-left: 40px;
-    min-height: 212px;
+    max-width: 250px;
+}
+
+.our-shops__title {
+    font-weight: 700;
+    font-size: 1.13rem;
+    line-height: 1.17em;
 }
 
 .our-shops__description {
     line-height: 1.43em;
+}
+
+.our-shops__actions {
+    display: flex;
 }
 
 .brands {
