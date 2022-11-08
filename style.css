@@ -286,7 +286,6 @@ body {
     flex-direction: column;
     gap: 25px;
     max-width: 265px;
- 
 }
 
 .subscribe__description {
@@ -318,7 +317,6 @@ body {
     background-position: calc(100% - 45px) 50%;
     flex: 1;
     padding: 35px 40px;
-
 }
 
 .our-shops__content {
